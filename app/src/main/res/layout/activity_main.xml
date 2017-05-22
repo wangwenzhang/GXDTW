@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+   <!-- <android.support.v7.widget.Toolbar
+        android:id="@+id/main_tolbar"
+        android:background="#ff8574"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20sp"
+                    android:text="搜索"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/main_menu"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="全部"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20sp"
+                    android:text="我的"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>-->
+  <FrameLayout
+      android:layout_weight="1"
+      android:id="@+id/activity_main_vp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </FrameLayout>
+    <RadioGroup
+        android:background="@color/divider2"
+        android:id="@+id/activity_main_rp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RadioButton
+            android:layout_gravity="center"
+            style="@style/button"
+            android:text="@string/dou_figure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_gravity="center"
+            style="@style/button"
+            android:text="@string/joke"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+       <!-- <RadioButton
+            android:layout_gravity="center"
+            style="@style/button"
+            android:text="@string/funny_video"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />-->
+        <RadioButton
+            android:layout_gravity="center"
+            style="@style/button"
+            android:text="@string/personal_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+
+</LinearLayout>

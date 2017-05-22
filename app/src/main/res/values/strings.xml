@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">搞笑斗图王</string>
+    <string name="cancel">取消</string>
+    <string name="search">搜索</string>
+    <string name="dou_figure">斗图仓库</string>
+    <string name="handpick">精选</string>
+    <string name="joke">笑话大全</string>
+    <string name="funny_video">搞笑视频</string>
+    <string name="returns">返回</string>
+    <string name="sent_directly">直接发送</string>
+    <string name="collection">收藏到本地</string>
+    <string name="personal_center">个人中心</string>
+    <string name="my_face">我的表情</string>
+    <string name="my_facebao">我的表情包</string>
+    <string name="my_joke">我的笑话</string>
+    <string name="my_vidio">我的视频</string>
+    <string name="start">开始体验</string>
+    <string name="welcome_back">欢迎回来</string>
+    <string name="friststart">第一次登陆</string>
+    <string name="collection_remind">已添加到我的表情</string>
+    <string name="collection_remind_bao">已添加到我的表情包</string>
+    <string name="input">请输入你想要的内容</string>
+    <string name="skip">|点击跳过</string>
+    <string name="user_name">用户名</string>
+    <string name="user_id">用户ID</string>
+    <string name="home_page">首页</string>
+    <string name="delete">删除</string>
+    <string name="like">喜欢</string>
+    <string name="joke1">笑话</string>
+</resources>

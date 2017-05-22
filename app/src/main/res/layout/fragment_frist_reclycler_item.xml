@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="215dp">
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.huitui.gxdt.view.PictureView
+            android:id="@+id/fragment_frist_reclyclerview_item_ptv"
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+        </com.huitui.gxdt.view.PictureView>
+
+        <TextView
+            android:id="@+id/fragmen_frist_rcyview_shanchu"
+            android:text="删除"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top" />
+    </FrameLayout>
+
+
+    <View
+        android:background="@color/bg_color_gray"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></View>
+</LinearLayout>

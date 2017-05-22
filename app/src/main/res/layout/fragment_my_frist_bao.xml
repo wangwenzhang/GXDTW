@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/fragmen_my_frist_rg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <RadioButton
+            android:clickable="true"
+            style="@style/button"
+
+            android:text="我的表情包"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <RadioButton
+            style="@style/button"
+
+            android:text="我的表情"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </RadioGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_my_frist_bao_image1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/text_color_emr"
+            android:visibility="gone"
+            android:id="@+id/fragment_my_frist_bao_image2"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+</LinearLayout>

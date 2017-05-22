@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huitui.gxdt">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    //分享权限
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+
+
+
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <application
+        android:name="com.huitui.gxdt.app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.huitui.gxdt.activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huitui.gxdt.activity.MainActivity">
+
+        </activity>
+        <activity android:name="com.huitui.gxdt.activity.FristActivity"></activity>
+        <activity android:name="com.huitui.gxdt.activity.ShareActivity"></activity>
+        <activity android:name="com.huitui.gxdt.activity.PictureActivity"></activity>
+        <activity android:name="com.huitui.gxdt.activity.SearchActivity"></activity>
+        <activity android:name="com.huitui.gxdt.activity.JokeActivity"></activity>
+        <activity
+            android:name="com.huitui.gxdt.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1105810027" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:theme="@style/Theme.UMDefault"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data android:value="5850a092c62dca0408001945" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="Baddu" android:name="UMENG_CHANNEL"/>
+
+        <!-- 注册广播 -->
+       <!-- <receiver android:name=".contents.NetBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>-->
+    <service android:name="com.huitui.gxdt.contents.UpdateService"></service>
+    </application>
+
+</manifest>
